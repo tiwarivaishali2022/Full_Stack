@@ -113,7 +113,6 @@ export default function Register() {
       const user = res.user;
       console.log(user);
 
-      // Update user profile with name
       await updateProfile(user, {
         displayName: values.name,
       });
